@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Erwin Reyes">
+    <title>The WhiteSpring Resort | Contact</title>
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="description" content="Contact The WhiteSpring Resort to plan your perfect getaway.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:wght@400;700&family=Macondo+Swash+Caps&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">The WhiteSpring Resort</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Accommodations</a></li>
+                <li><a href="contact.html" class="current">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <div class="container">
+
+    <!-- Section Title -->
+    <section class="contact-intro">
+        <h2>Contact Us</h2>
+        <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!</p>
+    </section>
+
+    <!--Image -->
+    <section class="contact-image">
+        <img src="images/swiss-sunset.jpg" alt="Stunning sunset view over the Swiss Alps with mountains in the background" width="710" height="270">
+    </section>
+
+    <!-- Form Section -->
+    <section class="contact-form-section">
+        <form method="post" action="https://wp.zybooks.com/form-viewer.php">
+
+        <div class="form-left">
+            <div>
+                <p>Required fields marked with a *</p>
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <div>
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+        </div>
+
+        <div class="form-right">
+            <fieldset>
+                <legend>Preferred Contact Method *</legend>
+
+                <div>
+                    <input type="radio" id="email-contact" name="contact-method" value="email" required>
+                    <label for="email-contact">Email</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="phone-contact" name="contact-method" value="phone" pattern="[0-9]{10}" required>
+                    <label for="phone-contact">Phone</label>
+                </div>
+            </fieldset>
+
+            <div>
+                <label for="comments">Comments *</label>
+                <textarea id="comments" name="comments" required></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </div>
+
+        </form>
+    </section>
+
+    </div>
+</main>
+
+    <footer>
+        <p>Copyright ©2026 - The WhiteSpring Resort</p>
+        <p>This site is for educational purposes only</p>
+    </footer>
+</body>
+</html>

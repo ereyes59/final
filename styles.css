@@ -1,0 +1,224 @@
+:root {
+    --light-gray: #F6F1F0;
+    --gray-blue: #7DB8D1;
+    --purple: #7C5C6F;
+    --dark-blue: #1F2843;
+
+    --font-headers: Archivo, Arial, Helvetica, sans-serif;
+    --font-h1: Macondo Swash Caps, Arial, Helvetica, sans-serif;
+    --font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+/* - GLOBAL - */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    line-height: 1.5;
+    background: url("images/moroccan-flower.png") repeat center;
+    color: #333;
+}
+
+/* - HEADER - */
+
+header {
+    background: url("images/swiss-valley.jpg") repeat center/cover;
+    text-align: center;
+    padding: 5rem 1rem 3rem;
+    color: white;
+    font-family: var(--font-headers);
+}
+
+header h1 {
+    margin: 0 0 1rem;
+    font-size: 2.5rem;
+    color: var(--dark-blue);
+    font-family: var(--font-h1);
+}
+
+header h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 1.3rem;
+}
+
+header nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--dark-blue);
+}
+
+/* - MAIN GENERAL - */
+
+main {
+    flex: 1;
+    max-width: 1440px;
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+    color: var(--dark-blue);
+}
+
+main h2 {
+    text-align: center;
+    margin-top: 0;
+    font-family: var(--font-headers);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+main > p {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    font-family: var(--font-family);
+}
+
+nav a:hover, nav a:focus {
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: var(--purple);
+}
+
+nav a.current {
+    color: var(--purple);
+    text-decoration: underline;
+}
+
+/* - INDEX PAGE - */
+
+.index-sections {
+    display: flex;
+    gap: 2rem;
+}
+
+.index-sections section {
+    flex: 1;
+    padding: 1rem;
+}
+
+.index-sections img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.index-sections h3 {
+    margin-top: 0;
+    text-align: center;
+    font-family: var(--font-headers);
+}
+
+.index-sections p {
+    font-family: var(--font-family);
+}
+
+/* - CONTACT PAGE - */
+
+.contact-intro {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.contact-image {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.contact-form-section form {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.form-left, .form-right {
+    flex: 1;
+}
+
+.form-right {
+    margin-top: 4rem;
+}
+
+fieldset {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: none; 
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+fieldset div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+fieldset input[type="radio"] {
+    margin: 0;
+}
+form div {
+    margin-bottom: 1.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid var(--gray-blue);
+}
+
+input:invalid,
+textarea:invalid {
+    border: 3px solid var(--purple);
+}
+
+button:hover, button:focus {
+    background: var(--purple);
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    background: var(--dark-blue);
+    color: white;
+    border: none;
+}
+/* - FOOTER - */
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    background: var(--dark-blue);
+    color: white;
+    margin-top: 2rem;
+    font-family: var(--font-family);
+}
+
+/* - RESPONSIVE - */
+
+@media (max-width: 768px) {
+
+    .index-sections {
+        flex-direction: column;
+    }
+}
